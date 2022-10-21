@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: kimheeju
   Date: 2022/10/21
-  Time: 21:07
+  Time: 21:23
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,10 +11,16 @@
     <title>Title</title>
 </head>
 <body>
-<form action="save" method="post">
-    username : <input type="text" name="username">
-    age : <input type="text" name="age">
-    <button type="submit">전송</button>
-</form>
+<body>
+성공
+<ul>
+  <li>id=${member.id}</li>
+  <li>username=${member.username}</li>
+  <li>age=${member.age}</li>
+</ul>
+
+<a href="/index.html">메인</a>
+</body>
+
 </body>
 </html>
