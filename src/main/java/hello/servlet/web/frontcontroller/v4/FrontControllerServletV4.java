@@ -47,7 +47,7 @@ public class FrontControllerServletV4 extends HttpServlet {
         view.render(model,request, response);
     }
 
-    private static MyView viewResolver(String viewName) { // 물리이름으로 세팅
+    private static MyView viewResolver(String viewName) { // 물리이름으로 셋팅
         return new MyView("/WEB-INF/views/" + viewName + ".jsp");
     }
 
@@ -55,6 +55,7 @@ public class FrontControllerServletV4 extends HttpServlet {
         Map<String, String> paramMap = new HashMap<>();
         request.getParameterNames().asIterator()
                 .forEachRemaining(paramName -> paramMap.put(paramName, request.getParameter(paramName)));
+
         return paramMap;
     }
 }
